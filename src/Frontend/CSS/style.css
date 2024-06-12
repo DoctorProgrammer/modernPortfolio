@@ -27,6 +27,9 @@ body {
     width: 100vw;
     background-color: antiquewhite;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(255, 242, 193, 0.5), rgba(255, 200, 200, 0.264)), url(../IMG/background.png);
 }
 
 #bigLetter {
@@ -37,16 +40,16 @@ body {
     top: 68%;
     left: 44%;
     transform: translate(-50%, -50%);
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 #name {
     font-family: 'Gwendolyn', cursive;
     font-size: 15em;
-    font-weight: 400;
+    font-weight: 700;
     color: #000000;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 10%;
 }
 
