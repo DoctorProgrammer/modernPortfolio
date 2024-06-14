@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const bigLetter = document.getElementById('bigLetter');
+    const navbar = document.getElementById('navbar');
 
-    // when scrolled, the big letters will move to the left the same amount as the scroll
     window.addEventListener('scroll', function() {
-        const offset = window.scrollY * -1;
-        console.log(offset);
-        bigLetter.style.left = "calc(44% + " + offset + "px)";
+        const offset = window.scrollY;
+
+        //bigLetter.style.left = "calc(44% + " + offset * -1 + "px)";
+
+        if (offset > 100) {
+            navbar.classList.add('scrolled');
+        }
     });
 });
